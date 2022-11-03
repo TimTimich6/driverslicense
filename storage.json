@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Timofey Obraztsov",
+    "points": 0,
+    "eyecolor": "blue",
+    "gender": "male",
+    "expired": false
+  },
+  {
+    "name": "Hugo Borsum",
+    "points": 5,
+    "eyecolor": "brown",
+    "gender": "male",
+    "expired": false
+  }
+]
