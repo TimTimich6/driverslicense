@@ -3,7 +3,7 @@ import data from "./storage.json";
 import fs from "fs";
 import Yallist from "yallist";
 
-interface License {
+export interface License {
   name: string;
   points: number;
   eyecolor: string;

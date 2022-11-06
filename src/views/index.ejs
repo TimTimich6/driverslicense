@@ -4,9 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css" rel="stylesheet" type="text/css" />
     <title>License</title>
   </head>
   <body>
-    <%- test %>
+    <div class="total">
+      <div class="left">
+        <h2 class="name field"><%= student.name %></h2>
+        <h4>CA, USA</h4>
+        <img src="https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" alt="" class="picture" />
+      </div>
+      <div class="right">
+        <h2 class="title field">DOB</h2>
+        <h4 class="slot field"><%= new Date(student.dob*1000).toDateString() %></h4>
+        <h2 class="title field">Gender</h2>
+        <h4 class="slot field"><%= student.gender=="male"?"M":"F" %></h4>
+        <h2 class="title field">Eye Color</h2>
+        <h4 class="slot field"><%= student.eyecolor %></h4>
+      </div>
+      <div class="right">
+        <h2 class="title field">Address</h2>
+        <h4 class="slot field"><%= student.address %></h4>
+        <h2 class="title field">Donor</h2>
+        <h4 class="slot field"><%= student.donor?"Yes":"No" %></h4>
+        <h2 class="title field">Suspended</h2>
+        <h4 class="slot field"><%= student.suspended?"Yes":"No" %></h4>
+      </div>
+    </div>
+    <form action="http://localhost:3000/license/find" method="POST">
+      <input name="person" id="person" type="text" />
+      <button>Find Driver</button>
+    </form>
   </body>
 </html>
