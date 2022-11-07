@@ -13,11 +13,12 @@ export interface License {
   donor: boolean;
   address: string;
   suspended: boolean;
+  pic: string;
 }
 let list = linkedl.create<License>(data);
 // const user = list.get(1);
-const updated = changePoints("Hugo Borsum", 40);
-if (updated) saveFile(updated);
+// const updated = changePoints("Hugo Borsum", 40);
+// if (updated) saveFile(updated);
 
 // saveFile(suspend(15));
 // printSuspended();

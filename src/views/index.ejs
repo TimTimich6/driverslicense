@@ -8,11 +8,20 @@
     <title>License</title>
   </head>
   <body>
+    <a class="link" href="/license/all">View All</a>
+    <a class="link" href="/license/suspended">View Suspended</a>
+    <a class="link" href="/license/expired">View Expired</a>
+    <a class="link" href="/license/donors">View Donors</a>
+    <form action="http://localhost:3000/license/find" method="POST">
+      <input name="person" id="person" type="text" />
+      <button>Find Driver</button>
+    </form>
+
     <div class="total">
       <div class="left">
         <h2 class="name field"><%= student.name %></h2>
         <h4>CA, USA</h4>
-        <img src="https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" alt="" class="picture" />
+        <img src="<%=student.pic%>" alt="" class="picture" />
       </div>
       <div class="right">
         <h2 class="title field">DOB</h2>
@@ -31,9 +40,5 @@
         <h4 class="slot field"><%= student.suspended?"Yes":"No" %></h4>
       </div>
     </div>
-    <form action="http://localhost:3000/license/find" method="POST">
-      <input name="person" id="person" type="text" />
-      <button>Find Driver</button>
-    </form>
   </body>
 </html>

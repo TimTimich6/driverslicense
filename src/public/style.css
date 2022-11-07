@@ -5,6 +5,12 @@
 }
 body {
   background-color: rgb(255, 248, 238);
+  padding: 2rem;
+}
+.ids {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .total {
   background-color: bisque;
@@ -30,6 +36,8 @@ body {
 .picture {
   border-radius: 1rem;
   width: 10em;
+  height: 10em;
+  object-fit: cover;
 }
 .slot {
 }
@@ -55,4 +63,18 @@ button {
   font-size: 1.3rem;
   font-weight: 600;
   height: 3rem;
+}
+
+.link {
+  font-size: 2rem;
+  padding: 0.5rem;
+  background-color: burlywood;
+  margin: 1rem;
+  color: white;
+  margin-top: 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 3px 3px rgb(160, 139, 110);
 }
